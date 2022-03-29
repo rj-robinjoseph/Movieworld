@@ -25,10 +25,26 @@ arrows.forEach((arrow,i)=>{
 // Toggle
 
 const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle ");
+const items = document.querySelectorAll(".container,.movie-list-title,.navbar-container,.nav-link,.sidebar,.left-menu-icon,.toggle,.bar");
 ball.addEventListener("click",()=>{
     items.forEach(item=>{
         item.classList.toggle("active")
     })
     ball.classList.toggle("active")
 })
+
+
+// Hamburger
+
+const hamburger = document.querySelector(".hamburger");
+const menuList = document.querySelector(".menu-list");
+
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    menuList.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",()=>{
+    hamburger.classList.remove("active");
+    menuList.classList.remove("active");
+}))
