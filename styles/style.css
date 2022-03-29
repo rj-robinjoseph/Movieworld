@@ -7,6 +7,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  margin: 0;
+}
+
 .navbar {
   width: 100%;
   height: 50px;
@@ -145,7 +149,7 @@ body {
 }
 
 .movie-list-container {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .movie-list-wrapper {
@@ -159,7 +163,7 @@ body {
 }
 
 .movie-list-item {
-  margin-right: 30px;
+  margin-right: 20px;
   position: relative;
 }
 
