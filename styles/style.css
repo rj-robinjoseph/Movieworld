@@ -280,3 +280,32 @@ h1 {
   background-color: white;
   transform: translateX(-20px);
 }
+
+/* Adding Responsiveness */
+
+@media only screen and (max-width: 1120px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-desc {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .profile-text-container {
+    display: none;
+  }
+  .featured-desc {
+    width: 250px;
+  }
+  .navbar-container {
+    padding: 0 10px 0 50px;
+  }
+  .profile-picture {
+    padding: 10px;
+  }
+}

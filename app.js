@@ -6,8 +6,9 @@ arrows.forEach((arrow,i)=>{
     const itemNumber = movieLists[i].querySelectorAll("img").length;
     let clickCounter = 0;
     arrow.addEventListener("click",()=>{
+        const ratio = window.innerWidth/270; 
         clickCounter++;
-        if (itemNumber - (5 + clickCounter) >= 0){
+        if (itemNumber - (5 + clickCounter) + (6 - ratio) >= 0){
             movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value-290}px)`;
         }else{
             movieLists[i].style.transform = "translateX(0)";
@@ -15,8 +16,13 @@ arrows.forEach((arrow,i)=>{
         }
         
     });
-    console.log(movieLists[i].querySelectorAll("img").length)
+    console.log(Math.floor(window.innerWidth/270))
 });
+
+
+
+
+// Toggle
 
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle ");
