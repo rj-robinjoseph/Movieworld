@@ -306,6 +306,7 @@ a {
   }
   .menu-list.active {
     right: 0;
+    background-color: #333c83;
   }
 }
 
