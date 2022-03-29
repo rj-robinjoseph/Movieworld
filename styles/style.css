@@ -149,13 +149,28 @@ a {
 }
 
 .featured-button {
-  background-color: red;
+  background-image: linear-gradient(
+    to right,
+    #d31027 0%,
+    #ea384d 51%,
+    #d31027 100%
+  );
+}
+.featured-button {
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
-  padding: 10px 20px;
   border-radius: 10px;
-  border: none;
-  outline: none;
-  font-weight: bold;
+  display: block;
+}
+
+.featured-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .movie-list-container {
